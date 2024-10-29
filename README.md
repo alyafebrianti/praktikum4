@@ -30,7 +30,54 @@ Apakah Anda memiliki kartu member? (ya/tidak): ya
 Total harga yang harus dibayar: Rp24500.00
 PS C:\Users\ASUS\Desktop\praktikum 1>
 ```
+## Cara Kerja Program
+Program ini menghitung harga tiket dengan mempertimbangkan jenis tiket yang dibeli (reguler atau VIP) dan apakah pembeli memiliki kartu member yang memberikan diskon. Mari kita bahas setiap bagian:
 
+1. **Input Jenis Tiket**:
+   ```python
+   tipe_tiket = input("Masukkan tipe tiket (reguler/VIP): ").strip().lower()
+   ```
+   Program meminta pengguna untuk memasukkan jenis tiket yang diinginkan, yaitu "reguler" atau "VIP". Input tersebut diubah menjadi huruf kecil dan dihilangkan spasi di depan dan belakang untuk memastikan konsistensi, sehingga "VIP" atau "vip" tetap dianggap sama.
+
+2. **Input Status Member**:
+   ```python
+   status_member = input("Apakah Anda memiliki kartu member? (ya/tidak): ").strip().lower()
+   ```
+   Program meminta pengguna untuk memasukkan status apakah mereka memiliki kartu member ("ya" atau "tidak"). Penggunaannya mirip dengan input sebelumnya: diubah menjadi huruf kecil dan dihilangkan spasi.
+
+3. **Menentukan Harga Tiket**:
+   ```python
+   if tipe_tiket == "reguler":
+       harga_tiket = 35000
+   elif tipe_tiket == "vip":
+       harga_tiket = 90000
+   else:
+       print("Tipe tiket tidak valid.")
+       harga_tiket = 0
+   ```
+   - Jika pengguna memilih tiket **reguler**, maka `harga_tiket` diatur menjadi **35.000**.
+   - Jika pengguna memilih tiket **VIP**, maka `harga_tiket` diatur menjadi **90.000**.
+   - Jika input tipe tiket tidak sesuai (bukan "reguler" atau "VIP"), program akan menampilkan pesan **"Tipe tiket tidak valid."** dan `harga_tiket` diatur menjadi **0**.
+
+4. **Menghitung Diskon untuk Member**:
+   ```python
+   if status_member == "ya" and harga_tiket > 0:
+       diskon = harga_tiket * 0.3
+       total_harga = harga_tiket - diskon
+   else:
+       total_harga = harga_tiket
+   ```
+   - Jika pengguna adalah **member** (jawaban "ya") dan memilih tipe tiket yang valid (`harga_tiket > 0`), maka mereka mendapatkan diskon sebesar **30%** dari `harga_tiket`.
+   - Jika pengguna **bukan member** atau tipe tiket tidak valid, maka `total_harga` sama dengan `harga_tiket` tanpa diskon.
+
+5. **Menampilkan Total Harga**:
+   ```python
+   if harga_tiket > 0:
+       print(f"Total harga yang harus dibayar: Rp{total_harga:.2f}")
+   ```
+   - Jika harga tiket valid (`harga_tiket > 0`), program akan mencetak total harga yang harus dibayar, diformat hingga dua desimal (contoh: Rp35000.00).
+   
+Dengan struktur ini, program memastikan harga tiket dihitung dengan benar sesuai tipe tiket dan status keanggotaan pengguna.
 
 ## kode program 
 ```
