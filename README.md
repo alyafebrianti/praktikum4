@@ -30,6 +30,7 @@ Apakah Anda memiliki kartu member? (ya/tidak): ya
 Total harga yang harus dibayar: Rp24500.00
 PS C:\Users\ASUS\Desktop\praktikum 1>
 ```
+
 ## Cara Kerja Program
 Program ini menghitung harga tiket dengan mempertimbangkan jenis tiket yang dibeli (reguler atau VIP) dan apakah pembeli memiliki kartu member yang memberikan diskon. Mari kita bahas setiap bagian:
 
@@ -76,8 +77,33 @@ Program ini menghitung harga tiket dengan mempertimbangkan jenis tiket yang dibe
        print(f"Total harga yang harus dibayar: Rp{total_harga:.2f}")
    ```
    - Jika harga tiket valid (`harga_tiket > 0`), program akan mencetak total harga yang harus dibayar, diformat hingga dua desimal (contoh: Rp35000.00).
-   
 Dengan struktur ini, program memastikan harga tiket dihitung dengan benar sesuai tipe tiket dan status keanggotaan pengguna.
+
+## Output Program 
+Output yang Anda peroleh menunjukkan bahwa kode program berjalan dengan benar sesuai logika yang diinginkan:
+
+1. **Kasus Pertama**:
+   - **Input**:
+     - Tipe tiket: `reguler`
+     - Status member: `tidak`
+   - **Proses**:
+     - Harga tiket untuk reguler adalah 35.000.
+     - Karena tidak memiliki kartu member, pengguna tidak mendapatkan diskon.
+   - **Output**:
+     - Program menampilkan total harga tanpa diskon, yaitu `Rp35000.00`.
+
+2. **Kasus Kedua**:
+   - **Input**:
+     - Tipe tiket: `reguler`
+     - Status member: `ya`
+   - **Proses**:
+     - Harga tiket untuk reguler tetap 35.000.
+     - Karena pengguna memiliki kartu member, ia mendapatkan diskon 30% dari harga tiket reguler.
+       - **Diskon** = 30% × 35.000 = 10.500
+       - **Total Harga** = 35.000 - 10.500 = 24.500
+   - **Output**:
+     - Program menampilkan total harga setelah diskon, yaitu `Rp24500.00`.
+
 
 ## kode program 
 ```
