@@ -158,4 +158,4 @@ PS C:\Users\ASUS\Desktop\praktikum 1>
 ```
 
 ## flowchart program kalkulator
- ![flowchart](F.png)
+ ![flowchart](Flowchartkalkulator.png)
