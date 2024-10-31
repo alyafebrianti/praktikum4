@@ -104,7 +104,10 @@ Output yang Anda peroleh menunjukkan bahwa kode program berjalan dengan benar se
    - **Output**:
      - Program menampilkan total harga setelah diskon, yaitu `Rp24500.00`.
 
+## flowchart program tiket bioskop
+![flowchart](img/Flowchart.png)
 
+ 
 ## kode program 
 ```
 # Fungsi untuk menghitung berdasarkan operator
