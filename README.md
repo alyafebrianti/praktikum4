@@ -105,7 +105,7 @@ Output yang Anda peroleh menunjukkan bahwa kode program berjalan dengan benar se
      - Program menampilkan total harga setelah diskon, yaitu `Rp24500.00`.
 
 ## flowchart program tiket bioskop
-![flowchart](img/Flowchart.png)
+ ![flowchart](img/Flowchart.png)
 
  
 ## kode program 
