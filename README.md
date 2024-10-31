@@ -20,7 +20,7 @@ if harga_tiket > 0:
 
 ## output program
 ```markdown
-PS C:\Users\ASUS\Desktop\praktikum 1> & C:/Users/ASUS/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/ASUS/Desktop/praktikum 1/bioskop.py"
+
 Masukkan tipe tiket (reguler/VIP): reguler
 Apakah Anda memiliki kartu member? (ya/tidak): tidak
 Total harga yang harus dibayar: Rp35000.00
@@ -28,7 +28,7 @@ PS C:\Users\ASUS\Desktop\praktikum 1> & C:/Users/ASUS/AppData/Local/Programs/Pyt
 Masukkan tipe tiket (reguler/VIP): reguler
 Apakah Anda memiliki kartu member? (ya/tidak): ya
 Total harga yang harus dibayar: Rp24500.00
-PS C:\Users\ASUS\Desktop\praktikum 1>
+
 ```
 
 ## Cara Kerja Program
@@ -144,19 +144,25 @@ except ValueError:
 
 ## output program
 ```
-PS C:\Users\ASUS\Desktop\praktikum 1> & C:/Users/ASUS/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/ASUS/Desktop/praktikum 1/iga.py"
 Masukkan angka pertama: 122
 Masukkan operator (+, -, *, /): +
 Masukkan angka kedua: 12
 Hasil: 134.0
-PS C:\Users\ASUS\Desktop\praktikum 1> & C:/Users/ASUS/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/ASUS/Desktop/praktikum 1/iga.py"
 Masukkan angka pertama: 130 
 Masukkan operator (+, -, *, /): *
 Masukkan angka kedua: 2
 Hasil: 260.0
-PS C:\Users\ASUS\Desktop\praktikum 1>
+
 ```
 ## Cara kerja program
+
+Di dalam kode, ada fungsi bernama `kalkulator` yang menerima dua angka dan sebuah operator sebagai input. Fungsi ini memeriksa operator yang diberikan. Jika operatornya adalah tanda tambah, fungsi akan menjumlahkan kedua angka. Jika tanda kurang, fungsi akan mengurangkan. Untuk perkalian dan pembagian, fungsi akan melakukan operasi yang sesuai, tetapi untuk pembagian, ada pengecekan tambahan untuk memastikan bahwa angka kedua tidak sama dengan nol. Jika angka kedua nol, fungsi akan memberikan pesan kesalahan, karena pembagian dengan nol tidak diperbolehkan.
+
+Setelah mendefinisikan fungsi tersebut, kode meminta pengguna untuk memasukkan angka pertama, operator, dan angka kedua. Jika pengguna memasukkan nilai yang tidak valid (seperti teks alih-alih angka), program akan menangkap kesalahan tersebut dan memberi tahu pengguna bahwa input yang dimasukkan tidak valid.
+
+Setelah semua input diterima, kode akan memanggil fungsi `kalkulator` dan menyimpan hasilnya. Kemudian, hasil ini akan ditampilkan. Jika hasilnya adalah angka, kode akan menampilkannya dengan dua angka desimal. Jika ada kesalahan dalam perhitungan (seperti operator yang tidak valid atau pembagian dengan nol), pesan kesalahan akan ditampilkan.
+
+Secara keseluruhan, kode ini adalah contoh yang baik tentang bagaimana membuat aplikasi interaktif yang menerima input dari pengguna dan memberikan hasil berdasarkan logika yang ditentukan. 
 
 ## flowchart program kalkulator
  ![flowchart](Flowchartkalkulator.png)
