@@ -156,3 +156,6 @@ Masukkan angka kedua: 2
 Hasil: 260.0
 PS C:\Users\ASUS\Desktop\praktikum 1>
 ```
+
+## flowchart program kalkulator
+ ![flowchart](F.png)
