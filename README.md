@@ -1,5 +1,5 @@
 ## kode program 
-```
+```python
  tipe_tiket = input("Masukkan tipe tiket (reguler/VIP): ").strip().lower()
 status_member = input("Apakah Anda memiliki kartu member? (ya/tidak): ").strip().lower()
 if tipe_tiket == "reguler":
@@ -19,7 +19,7 @@ if harga_tiket > 0:
 ```
 
 ## output program
-```
+```markdown
 PS C:\Users\ASUS\Desktop\praktikum 1> & C:/Users/ASUS/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/ASUS/Desktop/praktikum 1/bioskop.py"
 Masukkan tipe tiket (reguler/VIP): reguler
 Apakah Anda memiliki kartu member? (ya/tidak): tidak
@@ -109,7 +109,7 @@ Output yang Anda peroleh menunjukkan bahwa kode program berjalan dengan benar se
 
  
 ## kode program 
-```
+```python
 # Fungsi untuk menghitung berdasarkan operator
 def kalkulator(angka1, angka2, operator):
     if operator == "+":
