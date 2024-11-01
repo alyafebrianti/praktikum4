@@ -24,7 +24,7 @@ if harga_tiket > 0:
 Masukkan tipe tiket (reguler/VIP): reguler
 Apakah Anda memiliki kartu member? (ya/tidak): tidak
 Total harga yang harus dibayar: Rp35000.00
-PS C:\Users\ASUS\Desktop\praktikum 1> & C:/Users/ASUS/AppData/Local/Programs/Python/Python313/python.exe "c:/Users/ASUS/Desktop/praktikum 1/bioskop.py"
+
 Masukkan tipe tiket (reguler/VIP): reguler
 Apakah Anda memiliki kartu member? (ya/tidak): ya
 Total harga yang harus dibayar: Rp24500.00
