@@ -32,21 +32,21 @@ Total harga yang harus dibayar: Rp24500.00
 ```
 
 ## Cara Kerja Program
-Program ini menghitung harga tiket dengan mempertimbangkan jenis tiket yang dibeli (reguler atau VIP) dan apakah pembeli memiliki kartu member yang memberikan diskon. Mari kita bahas setiap bagian:
+Program ini menghitung harga tiket dengan mempertimbangkan jenis tiket yang dibeli (reguler atau VIP) dan apakah pembeli memiliki kartu member yang memberikan diskon. 
 
-1. **Input Jenis Tiket**:
+1. Input Jenis Tiket:
    ```python
    tipe_tiket = input("Masukkan tipe tiket (reguler/VIP): ").strip().lower()
    ```
    Program meminta pengguna untuk memasukkan jenis tiket yang diinginkan, yaitu "reguler" atau "VIP". Input tersebut diubah menjadi huruf kecil dan dihilangkan spasi di depan dan belakang untuk memastikan konsistensi, sehingga "VIP" atau "vip" tetap dianggap sama.
 
-2. **Input Status Member**:
+2. Input Status Member:
    ```python
    status_member = input("Apakah Anda memiliki kartu member? (ya/tidak): ").strip().lower()
    ```
    Program meminta pengguna untuk memasukkan status apakah mereka memiliki kartu member ("ya" atau "tidak"). Penggunaannya mirip dengan input sebelumnya: diubah menjadi huruf kecil dan dihilangkan spasi.
 
-3. **Menentukan Harga Tiket**:
+3. Menentukan Harga Tiket:
    ```python
    if tipe_tiket == "reguler":
        harga_tiket = 35000
@@ -56,11 +56,11 @@ Program ini menghitung harga tiket dengan mempertimbangkan jenis tiket yang dibe
        print("Tipe tiket tidak valid.")
        harga_tiket = 0
    ```
-   - Jika pengguna memilih tiket **reguler**, maka `harga_tiket` diatur menjadi **35.000**.
-   - Jika pengguna memilih tiket **VIP**, maka `harga_tiket` diatur menjadi **90.000**.
-   - Jika input tipe tiket tidak sesuai (bukan "reguler" atau "VIP"), program akan menampilkan pesan **"Tipe tiket tidak valid."** dan `harga_tiket` diatur menjadi **0**.
+   - Jika pengguna memilih tiket reguler, maka `harga_tiket` diatur menjadi 35.000.
+   - Jika pengguna memilih tiket VIP, maka `harga_tiket` diatur menjadi 90.000.
+   - Jika input tipe tiket tidak sesuai (bukan "reguler" atau "VIP"), program akan menampilkan pesan "Tipe tiket tidak valid." dan `harga_tiket` diatur menjadi 0.
 
-4. **Menghitung Diskon untuk Member**:
+4. Menghitung Diskon untuk Member:
    ```python
    if status_member == "ya" and harga_tiket > 0:
        diskon = harga_tiket * 0.3
@@ -68,10 +68,10 @@ Program ini menghitung harga tiket dengan mempertimbangkan jenis tiket yang dibe
    else:
        total_harga = harga_tiket
    ```
-   - Jika pengguna adalah **member** (jawaban "ya") dan memilih tipe tiket yang valid (`harga_tiket > 0`), maka mereka mendapatkan diskon sebesar **30%** dari `harga_tiket`.
-   - Jika pengguna **bukan member** atau tipe tiket tidak valid, maka `total_harga` sama dengan `harga_tiket` tanpa diskon.
+   - Jika pengguna adalah member (jawaban "ya") dan memilih tipe tiket yang valid (`harga_tiket > 0`), maka mereka mendapatkan diskon sebesar 30% dari `harga_tiket`.
+   - Jika pengguna bukan member atau tipe tiket tidak valid, maka `total_harga` sama dengan `harga_tiket` tanpa diskon.
 
-5. **Menampilkan Total Harga**:
+5. Menampilkan Total Harga:
    ```python
    if harga_tiket > 0:
        print(f"Total harga yang harus dibayar: Rp{total_harga:.2f}")
@@ -80,28 +80,28 @@ Program ini menghitung harga tiket dengan mempertimbangkan jenis tiket yang dibe
 Dengan struktur ini, program memastikan harga tiket dihitung dengan benar sesuai tipe tiket dan status keanggotaan pengguna.
 
 ## Output Program 
-Output yang Anda peroleh menunjukkan bahwa kode program berjalan dengan benar sesuai logika yang diinginkan:
+Output yang di peroleh menunjukkan bahwa kode program berjalan dengan benar sesuai logika yang diinginkan:
 
-1. **Kasus Pertama**:
-   - **Input**:
+1. Kasus Pertama:
+   - Input:
      - Tipe tiket: `reguler`
      - Status member: `tidak`
-   - **Proses**:
+   - Proses:
      - Harga tiket untuk reguler adalah 35.000.
      - Karena tidak memiliki kartu member, pengguna tidak mendapatkan diskon.
-   - **Output**:
+   - Output:
      - Program menampilkan total harga tanpa diskon, yaitu `Rp35000.00`.
 
-2. **Kasus Kedua**:
-   - **Input**:
+2. Kasus Kedua:
+   - Input:
      - Tipe tiket: `reguler`
      - Status member: `ya`
-   - **Proses**:
+   - Proses:
      - Harga tiket untuk reguler tetap 35.000.
      - Karena pengguna memiliki kartu member, ia mendapatkan diskon 30% dari harga tiket reguler.
-       - **Diskon** = 30% × 35.000 = 10.500
-       - **Total Harga** = 35.000 - 10.500 = 24.500
-   - **Output**:
+       - Diskon = 30% × 35.000 = 10.500
+       - Total Harga = 35.000 - 10.500 = 24.500
+   - Output:
      - Program menampilkan total harga setelah diskon, yaitu `Rp24500.00`.
 
 ## flowchart program tiket bioskop
